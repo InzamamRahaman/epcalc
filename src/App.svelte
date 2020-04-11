@@ -397,6 +397,54 @@
   $: milestones = get_milestones(P)
   $: log = true
 
+  function downloadCSV(csv, filename) {
+    var csvFile;
+    var downloadLink;
+
+    // CSV file
+    csvFile = new Blob([csv], {type: "text/csv"});
+
+    // Download link
+    downloadLink = document.createElement("a");
+
+    // File name
+    downloadLink.download = filename;
+
+    // Create a link to the file
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+
+    // Hide download link
+    downloadLink.style.display = "none";
+
+    // Add the link to DOM
+    document.body.appendChild(downloadLink);
+
+    // Click download link
+    downloadLink.click();
+}
+
+function exportTableToCSV(filename) {
+    var csv = [];
+    //var rows = document.querySelectorAll("table tr");
+    var rows = document.querySelectorAll(".relevant");
+    
+    for (var i = 0; i < rows.length; i++) {
+        var row = [], cols = rows[i].querySelectorAll("td, th");
+        
+        for (var j = 0; j < cols.length; j++) 
+            row.push(cols[j].innerText);
+        
+        csv.push(row.join(","));        
+    }
+
+    // Download CSV file
+    downloadCSV(csv.join("\n"), filename);
+}
+
+  function handleClick() {
+		exportTableToCSV('data.csv');
+	}
+
   
 
 </script>
@@ -1018,12 +1066,15 @@ In addition to the transmission dynamics, this model allows the use of supplemen
 Note that one can use this calculator to measure one's risk exposure to the disease for any given day of the epidemic: the probability of getting infected on day {Math.round(indexToTime(active_))} given <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/guidance-risk-assesment-hcp.html">close contact</a> with <input type="text" style="width:{Math.ceil(Math.log10(p_num_ind))*9.5 + 5}px; font-size: 15.5px; color:#777" bind:value={p_num_ind}> individuals is {((1-(Math.pow(1 - (Iters[active_][2])*(0.45/100), p_num_ind)))*100).toFixed(5)}% given an attack rate of 0.45% [<a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6909e1.htm?s_cid=mm6909e1_w">Burke et. al</a>].
 </p>
 
-
-
+<div class="center">
+<button on:click|once={handleClick}>
+	Download Full as CSV
+</button>
+</div>
 
 <div class="center">
-<table id='datatable' style="width:100%; margin:auto; font-weight: 300; border-spacing: inherit">
-<tr>
+<table style="display: none; width:100%; margin:auto; font-weight: 300; border-spacing: inherit">
+<tr class='relevant'>
   <th>Day</th>
   <th>Susceptible Total</th>
   <th>Susceptible Rate</th>
@@ -1036,30 +1087,71 @@ Note that one can use this calculator to measure one's risk exposure to the dise
   <th>Recovered Total</th>
   <!-- <th>Recovered Delta</th>-->
   <th>Hospitalised Total</th>
-  <th>Hospitalised Delta</th>
+  <th>Hospitalised Rate</th>
   <th>Fatalities Total</th>
-  <th>Fatalities Delta</th>
+  <th>Fatalities Rate</th>
 </tr>
 {#each Iters as row, i}
-  <tr>
+  <tr class='relevant'>
     <td>{Math.round(indexToTime(i))}</td>
-    <td>{ (100*row[0]).toFixed(2) }%</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[0]))} / day</td>
-    <td>{ (100*row[1]).toFixed(2) }%</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[1])) } / day</td>
-    <td>{ (100*row[2]).toFixed(2) }%</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[2])) } / day</td>
-    <td>{ ((100*(1-row[0]-row[1]-row[2]))).toFixed(2) }%</td>
-    <td>{formatNumber(Math.round(N*(get_d(i)[3]+get_d(i)[4]+get_d(i)[5]+get_d(i)[6]+get_d(i)[7]) )) } / day</td>
-    <td>{ (100*(row[7]+row[8])).toFixed(2) }%</td>
-    <td>{ (100*(row[5]+row[6])).toFixed(2) }%</td>
-    <td>{formatNumber(Math.round(N*(get_d(i)[5]+get_d(i)[6]))) } / day</td>
-    <td>{ (100*row[9]).toFixed(2) }%</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[9])) } / day</td>
+    <td>{ (N*row[0]).toFixed(2) }</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[0]))}</td>
+    <td>{ (N*row[1]).toFixed(2) }</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[1])) }</td>
+    <td>{ (N*row[2]).toFixed(2) }</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[2])) }</td>
+    <td>{ ((N*(1-row[0]-row[1]-row[2]))).toFixed(2) }</td>
+    <td>{formatNumber(Math.round(N*(get_d(i)[3]+get_d(i)[4]+get_d(i)[5]+get_d(i)[6]+get_d(i)[7]) )) }</td>
+    <td>{ (N*(row[7]+row[8])).toFixed(2) }</td>
+    <td>{ (N*(row[5]+row[6])).toFixed(2) }</td>
+    <td>{formatNumber(Math.round(N*(get_d(i)[5]+get_d(i)[6]))) }</td>
+    <td>{ (N*row[9]).toFixed(2) }</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[9])) }</td>
   </tr>
 {/each}
 </table>
 </div>
+
+<div class="center">
+<table id='datatable' style="width:100%; margin:auto; font-weight: 300; border-spacing: inherit">
+<tr>
+  <th>Day</th>
+  <!-- <th>Susceptible Total</th>
+  <th>Susceptible Rate</th> -->
+  <th>Exposed Total</th>
+  <!-- <th>Exposed Rate</th> -->
+  <th>Infectious Total</th>
+  <!-- <th>Infectious Rate</th> -->
+  <th>Removed Total</th>
+  <!-- <th>Removed Rate</th> -->
+  <th>Recovered Total</th>
+  <!-- <th>Recovered Delta</th>-->
+  <th>Hospitalised Total</th>
+  <!-- <th>Hospitalised Delta</th> -->
+  <th>Fatalities Total</th>
+  <!-- <th>Fatalities Delta</th> -->
+</tr>
+{#each Iters as row, i}
+  <tr>
+    <td>{Math.round(indexToTime(i))}</td>
+    <!-- <td>{ (100*row[0]).toFixed(2) }%</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[0]))} / day</td> -->
+    <td>{ (N*row[1]).toFixed(2) }</td>
+    <!-- <td>{formatNumber(Math.round(N*get_d(i)[1])) } / day</td> -->
+    <td>{ (N*row[2]).toFixed(2) }</td>
+    <!-- <td>{formatNumber(Math.round(N*get_d(i)[2])) } / day</td> -->
+    <td>{ ((N*(1-row[0]-row[1]-row[2]))).toFixed(2) }</td>
+    <!-- <td>{formatNumber(Math.round(N*(get_d(i)[3]+get_d(i)[4]+get_d(i)[5]+get_d(i)[6]+get_d(i)[7]) )) } / day</td> -->
+    <td>{ (N*(row[7]+row[8])).toFixed(2) }</td>
+    <td>{ (N*(row[5]+row[6])).toFixed(2) }</td>
+    <!-- <td>{formatNumber(Math.round(N*(get_d(i)[5]+get_d(i)[6]))) } / day</td> -->
+    <td>{ (N*row[9]).toFixed(2) }</td>
+    <!-- <td>{formatNumber(Math.round(N*get_d(i)[9])) } / day</td> -->
+  </tr>
+{/each}
+</table>
+</div>
+
 
 <p class = "center">
 A sampling of the estimates for epidemic parameters are presented below:
