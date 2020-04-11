@@ -164,6 +164,8 @@
       v =integrate(method,f,v,t,dt); 
       t+=dt
     }
+    // console.log(Iters);
+    // console.log('Hello World');
     return {"P": P, 
             "deaths": N*v[6], 
             "total": 1-v[0],
@@ -395,6 +397,8 @@
   $: milestones = get_milestones(P)
   $: log = true
 
+  
+
 </script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css" integrity="sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws" crossorigin="anonymous">
@@ -601,6 +605,7 @@
 
   <div style="flex: 0 0 270px; width:270px;">
     <div style="position:relative; top:48px; right:-115px">
+    
       <div class="legendtext" style="position:absolute; left:-16px; top:-34px; width:50px; height: 100px; font-size: 13px; line-height:16px; font-weight: normal; text-align: center"><b>Day</b><br> {Math.round(indexToTime(active_))}</div>
 
       <!-- Susceptible -->
@@ -1017,6 +1022,48 @@ Note that one can use this calculator to measure one's risk exposure to the dise
 <p class = "center">
 A sampling of the estimates for epidemic parameters are presented below:
 </p>
+
+
+
+<div class="center">
+<table id='datatable' style="width:100%; margin:auto; font-weight: 300; border-spacing: inherit">
+<tr>
+  <th>Day</th>
+  <th>Susceptible Total</th>
+  <th>Susceptible Rate</th>
+  <th>Exposed Total</th>
+  <th>Exposed Rate</th>
+  <th>Infectious Total</th>
+  <th>Infectious Rate</th>
+  <th>Removed Total</th>
+  <th>Removed Rate</th>
+  <th>Recovered Total</th>
+  <!-- <th>Recovered Delta</th>-->
+  <th>Hospitalised Total</th>
+  <th>Hospitalised Delta</th>
+  <th>Fatalities Total</th>
+  <th>Fatalities Delta</th>
+</tr>
+{#each Iters as row, i}
+  <tr>
+    <td>{Math.round(indexToTime(i))}</td>
+    <td>{ (100*row[0]).toFixed(2) }%</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[0]))} / day</td>
+    <td>{ (100*row[1]).toFixed(2) }%</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[1])) } / day</td>
+    <td>{ (100*row[2]).toFixed(2) }%</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[2])) } / day</td>
+    <td>{ ((100*(1-row[0]-row[1]-row[2]))).toFixed(2) }%</td>
+    <td>{formatNumber(Math.round(N*(get_d(i)[3]+get_d(i)[4]+get_d(i)[5]+get_d(i)[6]+get_d(i)[7]) )) } / day</td>
+    <td>{ (100*(row[7]+row[8])).toFixed(2) }%</td>
+    <td>{ (100*(row[5]+row[6])).toFixed(2) }%</td>
+    <td>{formatNumber(Math.round(N*(get_d(i)[5]+get_d(i)[6]))) } / day</td>
+    <td>{ (100*row[9]).toFixed(2) }%</td>
+    <td>{formatNumber(Math.round(N*get_d(i)[9])) } / day</td>
+  </tr>
+{/each}
+</table>
+</div>
 
 <div class="center">
 <table style="width:100%; margin:auto; font-weight: 300; border-spacing: inherit">
