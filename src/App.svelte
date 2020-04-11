@@ -1095,18 +1095,18 @@ Note that one can use this calculator to measure one's risk exposure to the dise
   <tr class='relevant'>
     <td>{Math.round(indexToTime(i))}</td>
     <td>{ (N*row[0]).toFixed(2) }</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[0]))}</td>
+    <td>{Math.round(N*get_d(i)[0]).toString()}</td>
     <td>{ (N*row[1]).toFixed(2) }</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[1])) }</td>
+    <td>{(Math.round(N*get_d(i)[1])).toString() }</td>
     <td>{ (N*row[2]).toFixed(2) }</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[2])) }</td>
+    <td>{(Math.round(N*get_d(i)[2])).toString() }</td>
     <td>{ ((N*(1-row[0]-row[1]-row[2]))).toFixed(2) }</td>
-    <td>{formatNumber(Math.round(N*(get_d(i)[3]+get_d(i)[4]+get_d(i)[5]+get_d(i)[6]+get_d(i)[7]) )) }</td>
+    <td>{(Math.round(N*(get_d(i)[3]+get_d(i)[4]+get_d(i)[5]+get_d(i)[6]+get_d(i)[7]) )).toString() }</td>
     <td>{ (N*(row[7]+row[8])).toFixed(2) }</td>
     <td>{ (N*(row[5]+row[6])).toFixed(2) }</td>
-    <td>{formatNumber(Math.round(N*(get_d(i)[5]+get_d(i)[6]))) }</td>
+    <td>{(Math.round(N*(get_d(i)[5]+get_d(i)[6]))).toString() }</td>
     <td>{ (N*row[9]).toFixed(2) }</td>
-    <td>{formatNumber(Math.round(N*get_d(i)[9])) }</td>
+    <td>{(Math.round(N*get_d(i)[9])).toString()}</td>
   </tr>
 {/each}
 </table>

@@ -22577,7 +22577,7 @@
 
     // (1094:0) {#each Iters as row, i}
     function create_each_block_1$1(ctx) {
-    	var tr, td0, t0_value = ctx.Math.round(ctx.indexToTime(ctx.i)) + "", t0, t1, td1, t2_value = (ctx.N*ctx.row[0]).toFixed(2) + "", t2, t3, td2, t4_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[0])) + "", t4, t5, td3, t6_value = (ctx.N*ctx.row[1]).toFixed(2) + "", t6, t7, td4, t8_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[1])) + "", t8, t9, td5, t10_value = (ctx.N*ctx.row[2]).toFixed(2) + "", t10, t11, td6, t12_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[2])) + "", t12, t13, td7, t14_value = ((ctx.N*(1-ctx.row[0]-ctx.row[1]-ctx.row[2]))).toFixed(2) + "", t14, t15, td8, t16_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[3]+ctx.get_d(ctx.i)[4]+ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]+ctx.get_d(ctx.i)[7]) )) + "", t16, t17, td9, t18_value = (ctx.N*(ctx.row[7]+ctx.row[8])).toFixed(2) + "", t18, t19, td10, t20_value = (ctx.N*(ctx.row[5]+ctx.row[6])).toFixed(2) + "", t20, t21, td11, t22_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]))) + "", t22, t23, td12, t24_value = (ctx.N*ctx.row[9]).toFixed(2) + "", t24, t25, td13, t26_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[9])) + "", t26, t27;
+    	var tr, td0, t0_value = ctx.Math.round(ctx.indexToTime(ctx.i)) + "", t0, t1, td1, t2_value = (ctx.N*ctx.row[0]).toFixed(2) + "", t2, t3, td2, t4_value = ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[0]).toString() + "", t4, t5, td3, t6_value = (ctx.N*ctx.row[1]).toFixed(2) + "", t6, t7, td4, t8_value = (ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[1])).toString() + "", t8, t9, td5, t10_value = (ctx.N*ctx.row[2]).toFixed(2) + "", t10, t11, td6, t12_value = (ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[2])).toString() + "", t12, t13, td7, t14_value = ((ctx.N*(1-ctx.row[0]-ctx.row[1]-ctx.row[2]))).toFixed(2) + "", t14, t15, td8, t16_value = (ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[3]+ctx.get_d(ctx.i)[4]+ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]+ctx.get_d(ctx.i)[7]) )).toString() + "", t16, t17, td9, t18_value = (ctx.N*(ctx.row[7]+ctx.row[8])).toFixed(2) + "", t18, t19, td10, t20_value = (ctx.N*(ctx.row[5]+ctx.row[6])).toFixed(2) + "", t20, t21, td11, t22_value = (ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]))).toString() + "", t22, t23, td12, t24_value = (ctx.N*ctx.row[9]).toFixed(2) + "", t24, t25, td13, t26_value = (ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[9])).toString() + "", t26, t27;
 
     	const block = {
     		c: function create() {
@@ -22631,27 +22631,27 @@
     			attr_dev(td2, "class", "svelte-1vzb36m");
     			add_location(td2, file$3, 1097, 4, 41873);
     			attr_dev(td3, "class", "svelte-1vzb36m");
-    			add_location(td3, file$3, 1098, 4, 41928);
+    			add_location(td3, file$3, 1098, 4, 41925);
     			attr_dev(td4, "class", "svelte-1vzb36m");
-    			add_location(td4, file$3, 1099, 4, 41967);
+    			add_location(td4, file$3, 1099, 4, 41964);
     			attr_dev(td5, "class", "svelte-1vzb36m");
-    			add_location(td5, file$3, 1100, 4, 42023);
+    			add_location(td5, file$3, 1100, 4, 42019);
     			attr_dev(td6, "class", "svelte-1vzb36m");
-    			add_location(td6, file$3, 1101, 4, 42062);
+    			add_location(td6, file$3, 1101, 4, 42058);
     			attr_dev(td7, "class", "svelte-1vzb36m");
-    			add_location(td7, file$3, 1102, 4, 42118);
+    			add_location(td7, file$3, 1102, 4, 42113);
     			attr_dev(td8, "class", "svelte-1vzb36m");
-    			add_location(td8, file$3, 1103, 4, 42177);
+    			add_location(td8, file$3, 1103, 4, 42172);
     			attr_dev(td9, "class", "svelte-1vzb36m");
-    			add_location(td9, file$3, 1104, 4, 42284);
+    			add_location(td9, file$3, 1104, 4, 42278);
     			attr_dev(td10, "class", "svelte-1vzb36m");
-    			add_location(td10, file$3, 1105, 4, 42332);
+    			add_location(td10, file$3, 1105, 4, 42326);
     			attr_dev(td11, "class", "svelte-1vzb36m");
-    			add_location(td11, file$3, 1106, 4, 42380);
+    			add_location(td11, file$3, 1106, 4, 42374);
     			attr_dev(td12, "class", "svelte-1vzb36m");
-    			add_location(td12, file$3, 1107, 4, 42450);
+    			add_location(td12, file$3, 1107, 4, 42443);
     			attr_dev(td13, "class", "svelte-1vzb36m");
-    			add_location(td13, file$3, 1108, 4, 42489);
+    			add_location(td13, file$3, 1108, 4, 42482);
     			attr_dev(tr, "class", "relevant svelte-1vzb36m");
     			add_location(tr, file$3, 1094, 2, 41766);
     		},
@@ -22711,7 +22711,7 @@
     				set_data_dev(t2, t2_value);
     			}
 
-    			if ((changed.N || changed.get_d) && t4_value !== (t4_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[0])) + "")) {
+    			if ((changed.N || changed.get_d) && t4_value !== (t4_value = ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[0]).toString() + "")) {
     				set_data_dev(t4, t4_value);
     			}
 
@@ -22719,7 +22719,7 @@
     				set_data_dev(t6, t6_value);
     			}
 
-    			if ((changed.N || changed.get_d) && t8_value !== (t8_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[1])) + "")) {
+    			if ((changed.N || changed.get_d) && t8_value !== (t8_value = (ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[1])).toString() + "")) {
     				set_data_dev(t8, t8_value);
     			}
 
@@ -22727,7 +22727,7 @@
     				set_data_dev(t10, t10_value);
     			}
 
-    			if ((changed.N || changed.get_d) && t12_value !== (t12_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[2])) + "")) {
+    			if ((changed.N || changed.get_d) && t12_value !== (t12_value = (ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[2])).toString() + "")) {
     				set_data_dev(t12, t12_value);
     			}
 
@@ -22735,7 +22735,7 @@
     				set_data_dev(t14, t14_value);
     			}
 
-    			if ((changed.N || changed.get_d) && t16_value !== (t16_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[3]+ctx.get_d(ctx.i)[4]+ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]+ctx.get_d(ctx.i)[7]) )) + "")) {
+    			if ((changed.N || changed.get_d) && t16_value !== (t16_value = (ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[3]+ctx.get_d(ctx.i)[4]+ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]+ctx.get_d(ctx.i)[7]) )).toString() + "")) {
     				set_data_dev(t16, t16_value);
     			}
 
@@ -22747,7 +22747,7 @@
     				set_data_dev(t20, t20_value);
     			}
 
-    			if ((changed.N || changed.get_d) && t22_value !== (t22_value = formatNumber$1(ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]))) + "")) {
+    			if ((changed.N || changed.get_d) && t22_value !== (t22_value = (ctx.Math.round(ctx.N*(ctx.get_d(ctx.i)[5]+ctx.get_d(ctx.i)[6]))).toString() + "")) {
     				set_data_dev(t22, t22_value);
     			}
 
@@ -22755,7 +22755,7 @@
     				set_data_dev(t24, t24_value);
     			}
 
-    			if ((changed.N || changed.get_d) && t26_value !== (t26_value = formatNumber$1(ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[9])) + "")) {
+    			if ((changed.N || changed.get_d) && t26_value !== (t26_value = (ctx.Math.round(ctx.N*ctx.get_d(ctx.i)[9])).toString() + "")) {
     				set_data_dev(t26, t26_value);
     			}
     		},
@@ -22799,21 +22799,21 @@
     			t12 = text(t12_value);
     			t13 = space();
     			attr_dev(td0, "class", "svelte-1vzb36m");
-    			add_location(td0, file$3, 1135, 4, 43196);
+    			add_location(td0, file$3, 1135, 4, 43187);
     			attr_dev(td1, "class", "svelte-1vzb36m");
-    			add_location(td1, file$3, 1138, 4, 43350);
+    			add_location(td1, file$3, 1138, 4, 43341);
     			attr_dev(td2, "class", "svelte-1vzb36m");
-    			add_location(td2, file$3, 1140, 4, 43460);
+    			add_location(td2, file$3, 1140, 4, 43451);
     			attr_dev(td3, "class", "svelte-1vzb36m");
-    			add_location(td3, file$3, 1142, 4, 43570);
+    			add_location(td3, file$3, 1142, 4, 43561);
     			attr_dev(td4, "class", "svelte-1vzb36m");
-    			add_location(td4, file$3, 1144, 4, 43751);
+    			add_location(td4, file$3, 1144, 4, 43742);
     			attr_dev(td5, "class", "svelte-1vzb36m");
-    			add_location(td5, file$3, 1145, 4, 43799);
+    			add_location(td5, file$3, 1145, 4, 43790);
     			attr_dev(td6, "class", "svelte-1vzb36m");
-    			add_location(td6, file$3, 1147, 4, 43932);
+    			add_location(td6, file$3, 1147, 4, 43923);
     			attr_dev(tr, "class", "svelte-1vzb36m");
-    			add_location(tr, file$3, 1134, 2, 43187);
+    			add_location(tr, file$3, 1134, 2, 43178);
     		},
 
     		m: function mount(target, anchor) {
@@ -24663,272 +24663,272 @@
     			attr_dev(div120, "class", "center svelte-1vzb36m");
     			add_location(div120, file$3, 1074, 0, 41192);
     			attr_dev(th14, "class", "svelte-1vzb36m");
-    			add_location(th14, file$3, 1117, 2, 42700);
+    			add_location(th14, file$3, 1117, 2, 42691);
     			attr_dev(th15, "class", "svelte-1vzb36m");
-    			add_location(th15, file$3, 1120, 2, 42781);
+    			add_location(th15, file$3, 1120, 2, 42772);
     			attr_dev(th16, "class", "svelte-1vzb36m");
-    			add_location(th16, file$3, 1122, 2, 42839);
+    			add_location(th16, file$3, 1122, 2, 42830);
     			attr_dev(th17, "class", "svelte-1vzb36m");
-    			add_location(th17, file$3, 1124, 2, 42903);
+    			add_location(th17, file$3, 1124, 2, 42894);
     			attr_dev(th18, "class", "svelte-1vzb36m");
-    			add_location(th18, file$3, 1126, 2, 42961);
+    			add_location(th18, file$3, 1126, 2, 42952);
     			attr_dev(th19, "class", "svelte-1vzb36m");
-    			add_location(th19, file$3, 1128, 2, 43023);
+    			add_location(th19, file$3, 1128, 2, 43014);
     			attr_dev(th20, "class", "svelte-1vzb36m");
-    			add_location(th20, file$3, 1130, 2, 43092);
+    			add_location(th20, file$3, 1130, 2, 43083);
     			attr_dev(tr1, "class", "svelte-1vzb36m");
-    			add_location(tr1, file$3, 1116, 0, 42693);
+    			add_location(tr1, file$3, 1116, 0, 42684);
     			attr_dev(table1, "id", "datatable");
     			set_style(table1, "width", "100%");
     			set_style(table1, "margin", "auto");
     			set_style(table1, "font-weight", "300");
     			set_style(table1, "border-spacing", "inherit");
-    			add_location(table1, file$3, 1115, 0, 42595);
+    			add_location(table1, file$3, 1115, 0, 42586);
     			attr_dev(div121, "class", "center svelte-1vzb36m");
-    			add_location(div121, file$3, 1114, 0, 42574);
+    			add_location(div121, file$3, 1114, 0, 42565);
     			attr_dev(p3, "class", "center svelte-1vzb36m");
-    			add_location(p3, file$3, 1155, 0, 44072);
+    			add_location(p3, file$3, 1155, 0, 44063);
     			attr_dev(th21, "class", "svelte-1vzb36m");
-    			add_location(th21, file$3, 1163, 4, 44288);
+    			add_location(th21, file$3, 1163, 4, 44279);
     			attr_dev(th22, "class", "svelte-1vzb36m");
-    			add_location(th22, file$3, 1164, 4, 44302);
-    			add_location(br13, file$3, 1165, 27, 44347);
+    			add_location(th22, file$3, 1164, 4, 44293);
+    			add_location(br13, file$3, 1165, 27, 44338);
     			html_tag_3 = new HtmlTag(raw5_value, null);
     			attr_dev(th23, "class", "svelte-1vzb36m");
-    			add_location(th23, file$3, 1165, 4, 44324);
-    			add_location(br14, file$3, 1166, 25, 44420);
+    			add_location(th23, file$3, 1165, 4, 44315);
+    			add_location(br14, file$3, 1166, 25, 44411);
     			html_tag_4 = new HtmlTag(raw6_value, t323);
     			attr_dev(th24, "class", "svelte-1vzb36m");
-    			add_location(th24, file$3, 1166, 4, 44399);
-    			add_location(br15, file$3, 1167, 25, 44504);
+    			add_location(th24, file$3, 1166, 4, 44390);
+    			add_location(br15, file$3, 1167, 25, 44495);
     			html_tag_5 = new HtmlTag(raw7_value, t327);
     			attr_dev(th25, "class", "svelte-1vzb36m");
-    			add_location(th25, file$3, 1167, 4, 44483);
+    			add_location(th25, file$3, 1167, 4, 44474);
     			attr_dev(tr2, "class", "svelte-1vzb36m");
-    			add_location(tr2, file$3, 1162, 2, 44279);
+    			add_location(tr2, file$3, 1162, 2, 44270);
     			attr_dev(a5, "href", "https://cmmid.github.io/topics/covid19/current-patterns-transmission/wuhan-early-dynamics.html");
     			attr_dev(a5, "class", "svelte-1vzb36m");
-    			add_location(a5, file$3, 1170, 20, 44598);
+    			add_location(a5, file$3, 1170, 20, 44589);
     			attr_dev(td0, "width", "27%");
     			attr_dev(td0, "class", "svelte-1vzb36m");
-    			add_location(td0, file$3, 1170, 4, 44582);
+    			add_location(td0, file$3, 1170, 4, 44573);
     			attr_dev(td1, "class", "svelte-1vzb36m");
-    			add_location(td1, file$3, 1171, 4, 44735);
+    			add_location(td1, file$3, 1171, 4, 44726);
     			attr_dev(td2, "class", "svelte-1vzb36m");
-    			add_location(td2, file$3, 1172, 4, 44759);
+    			add_location(td2, file$3, 1172, 4, 44750);
     			attr_dev(td3, "class", "svelte-1vzb36m");
-    			add_location(td3, file$3, 1173, 4, 44788);
+    			add_location(td3, file$3, 1173, 4, 44779);
     			attr_dev(td4, "class", "svelte-1vzb36m");
-    			add_location(td4, file$3, 1174, 4, 44805);
+    			add_location(td4, file$3, 1174, 4, 44796);
     			attr_dev(tr3, "class", "svelte-1vzb36m");
-    			add_location(tr3, file$3, 1169, 2, 44573);
+    			add_location(tr3, file$3, 1169, 2, 44564);
     			attr_dev(a6, "href", "https://www.nejm.org/doi/full/10.1056/NEJMoa2001316");
     			attr_dev(a6, "class", "svelte-1vzb36m");
-    			add_location(a6, file$3, 1177, 8, 44841);
+    			add_location(a6, file$3, 1177, 8, 44832);
     			attr_dev(td5, "class", "svelte-1vzb36m");
-    			add_location(td5, file$3, 1177, 4, 44837);
+    			add_location(td5, file$3, 1177, 4, 44828);
     			attr_dev(td6, "class", "svelte-1vzb36m");
-    			add_location(td6, file$3, 1178, 4, 44938);
+    			add_location(td6, file$3, 1178, 4, 44929);
     			attr_dev(td7, "class", "svelte-1vzb36m");
-    			add_location(td7, file$3, 1179, 4, 44962);
+    			add_location(td7, file$3, 1179, 4, 44953);
     			attr_dev(td8, "class", "svelte-1vzb36m");
-    			add_location(td8, file$3, 1180, 4, 44991);
+    			add_location(td8, file$3, 1180, 4, 44982);
     			attr_dev(td9, "class", "svelte-1vzb36m");
-    			add_location(td9, file$3, 1181, 4, 45020);
+    			add_location(td9, file$3, 1181, 4, 45011);
     			attr_dev(tr4, "class", "svelte-1vzb36m");
-    			add_location(tr4, file$3, 1176, 2, 44828);
+    			add_location(tr4, file$3, 1176, 2, 44819);
     			attr_dev(a7, "href", "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30260-9/fulltext");
     			attr_dev(a7, "class", "svelte-1vzb36m");
-    			add_location(a7, file$3, 1184, 8, 45069);
+    			add_location(a7, file$3, 1184, 8, 45060);
     			attr_dev(td10, "class", "svelte-1vzb36m");
-    			add_location(td10, file$3, 1184, 4, 45065);
+    			add_location(td10, file$3, 1184, 4, 45056);
     			attr_dev(td11, "class", "svelte-1vzb36m");
-    			add_location(td11, file$3, 1185, 4, 45188);
+    			add_location(td11, file$3, 1185, 4, 45179);
     			attr_dev(td12, "class", "svelte-1vzb36m");
-    			add_location(td12, file$3, 1186, 4, 45220);
+    			add_location(td12, file$3, 1186, 4, 45211);
     			attr_dev(td13, "class", "svelte-1vzb36m");
-    			add_location(td13, file$3, 1187, 4, 45252);
+    			add_location(td13, file$3, 1187, 4, 45243);
     			attr_dev(td14, "class", "svelte-1vzb36m");
-    			add_location(td14, file$3, 1188, 4, 45269);
+    			add_location(td14, file$3, 1188, 4, 45260);
     			attr_dev(tr5, "class", "svelte-1vzb36m");
-    			add_location(tr5, file$3, 1183, 2, 45056);
+    			add_location(tr5, file$3, 1183, 2, 45047);
     			attr_dev(a8, "href", "https://www.who.int/news-room/detail/23-01-2020-statement-on-the-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)");
     			attr_dev(a8, "class", "svelte-1vzb36m");
-    			add_location(a8, file$3, 1191, 8, 45305);
+    			add_location(a8, file$3, 1191, 8, 45296);
     			attr_dev(td15, "class", "svelte-1vzb36m");
-    			add_location(td15, file$3, 1191, 4, 45301);
+    			add_location(td15, file$3, 1191, 4, 45292);
     			attr_dev(td16, "class", "svelte-1vzb36m");
-    			add_location(td16, file$3, 1192, 4, 45547);
+    			add_location(td16, file$3, 1192, 4, 45538);
     			attr_dev(td17, "class", "svelte-1vzb36m");
-    			add_location(td17, file$3, 1193, 4, 45571);
+    			add_location(td17, file$3, 1193, 4, 45562);
     			attr_dev(td18, "class", "svelte-1vzb36m");
-    			add_location(td18, file$3, 1194, 4, 45601);
+    			add_location(td18, file$3, 1194, 4, 45592);
     			attr_dev(td19, "class", "svelte-1vzb36m");
-    			add_location(td19, file$3, 1195, 4, 45615);
+    			add_location(td19, file$3, 1195, 4, 45606);
     			attr_dev(tr6, "class", "svelte-1vzb36m");
-    			add_location(tr6, file$3, 1190, 2, 45292);
+    			add_location(tr6, file$3, 1190, 2, 45283);
     			attr_dev(a9, "href", "https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf");
     			attr_dev(a9, "class", "svelte-1vzb36m");
-    			add_location(a9, file$3, 1198, 8, 45648);
+    			add_location(a9, file$3, 1198, 8, 45639);
     			attr_dev(td20, "class", "svelte-1vzb36m");
-    			add_location(td20, file$3, 1198, 4, 45644);
+    			add_location(td20, file$3, 1198, 4, 45635);
     			attr_dev(td21, "class", "svelte-1vzb36m");
-    			add_location(td21, file$3, 1199, 4, 45804);
+    			add_location(td21, file$3, 1199, 4, 45795);
     			attr_dev(td22, "class", "svelte-1vzb36m");
-    			add_location(td22, file$3, 1200, 4, 45828);
+    			add_location(td22, file$3, 1200, 4, 45819);
     			attr_dev(td23, "class", "svelte-1vzb36m");
-    			add_location(td23, file$3, 1201, 4, 45858);
+    			add_location(td23, file$3, 1201, 4, 45849);
     			attr_dev(td24, "class", "svelte-1vzb36m");
-    			add_location(td24, file$3, 1202, 4, 45887);
+    			add_location(td24, file$3, 1202, 4, 45878);
     			attr_dev(tr7, "class", "svelte-1vzb36m");
-    			add_location(tr7, file$3, 1197, 2, 45635);
+    			add_location(tr7, file$3, 1197, 2, 45626);
     			attr_dev(a10, "href", "https://www.biorxiv.org/content/10.1101/2020.01.25.919787v2");
     			attr_dev(a10, "class", "svelte-1vzb36m");
-    			add_location(a10, file$3, 1205, 8, 45920);
+    			add_location(a10, file$3, 1205, 8, 45911);
     			attr_dev(td25, "class", "svelte-1vzb36m");
-    			add_location(td25, file$3, 1205, 4, 45916);
+    			add_location(td25, file$3, 1205, 4, 45907);
     			attr_dev(td26, "class", "svelte-1vzb36m");
-    			add_location(td26, file$3, 1206, 4, 46017);
+    			add_location(td26, file$3, 1206, 4, 46008);
     			attr_dev(td27, "class", "svelte-1vzb36m");
-    			add_location(td27, file$3, 1207, 4, 46040);
+    			add_location(td27, file$3, 1207, 4, 46031);
     			attr_dev(td28, "class", "svelte-1vzb36m");
-    			add_location(td28, file$3, 1208, 4, 46069);
+    			add_location(td28, file$3, 1208, 4, 46060);
     			attr_dev(td29, "class", "svelte-1vzb36m");
-    			add_location(td29, file$3, 1209, 4, 46099);
+    			add_location(td29, file$3, 1209, 4, 46090);
     			attr_dev(tr8, "class", "svelte-1vzb36m");
-    			add_location(tr8, file$3, 1204, 2, 45907);
+    			add_location(tr8, file$3, 1204, 2, 45898);
     			attr_dev(a11, "href", "https://academic.oup.com/jtm/advance-article/doi/10.1093/jtm/taaa030/5766334");
     			attr_dev(a11, "class", "svelte-1vzb36m");
-    			add_location(a11, file$3, 1212, 8, 46145);
+    			add_location(a11, file$3, 1212, 8, 46136);
     			attr_dev(td30, "class", "svelte-1vzb36m");
-    			add_location(td30, file$3, 1212, 4, 46141);
+    			add_location(td30, file$3, 1212, 4, 46132);
     			attr_dev(td31, "class", "svelte-1vzb36m");
-    			add_location(td31, file$3, 1213, 4, 46280);
+    			add_location(td31, file$3, 1213, 4, 46271);
     			attr_dev(td32, "class", "svelte-1vzb36m");
-    			add_location(td32, file$3, 1214, 4, 46310);
+    			add_location(td32, file$3, 1214, 4, 46301);
     			attr_dev(td33, "class", "svelte-1vzb36m");
-    			add_location(td33, file$3, 1215, 4, 46328);
+    			add_location(td33, file$3, 1215, 4, 46319);
     			attr_dev(td34, "class", "svelte-1vzb36m");
-    			add_location(td34, file$3, 1216, 4, 46345);
+    			add_location(td34, file$3, 1216, 4, 46336);
     			attr_dev(tr9, "class", "svelte-1vzb36m");
-    			add_location(tr9, file$3, 1211, 2, 46132);
+    			add_location(tr9, file$3, 1211, 2, 46123);
     			attr_dev(a12, "href", "https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2020.25.5.2000062");
     			attr_dev(a12, "class", "svelte-1vzb36m");
-    			add_location(a12, file$3, 1219, 8, 46382);
+    			add_location(a12, file$3, 1219, 8, 46373);
     			attr_dev(td35, "class", "svelte-1vzb36m");
-    			add_location(td35, file$3, 1219, 4, 46378);
+    			add_location(td35, file$3, 1219, 4, 46369);
     			attr_dev(td36, "class", "svelte-1vzb36m");
-    			add_location(td36, file$3, 1220, 4, 46517);
+    			add_location(td36, file$3, 1220, 4, 46508);
     			attr_dev(td37, "class", "svelte-1vzb36m");
-    			add_location(td37, file$3, 1221, 4, 46536);
+    			add_location(td37, file$3, 1221, 4, 46527);
     			attr_dev(td38, "class", "svelte-1vzb36m");
-    			add_location(td38, file$3, 1222, 4, 46550);
+    			add_location(td38, file$3, 1222, 4, 46541);
     			attr_dev(td39, "class", "svelte-1vzb36m");
-    			add_location(td39, file$3, 1223, 4, 46579);
+    			add_location(td39, file$3, 1223, 4, 46570);
     			attr_dev(tr10, "class", "svelte-1vzb36m");
-    			add_location(tr10, file$3, 1218, 2, 46369);
+    			add_location(tr10, file$3, 1218, 2, 46360);
     			attr_dev(a13, "href", "https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.article-info");
     			attr_dev(a13, "class", "svelte-1vzb36m");
-    			add_location(a13, file$3, 1226, 8, 46612);
+    			add_location(a13, file$3, 1226, 8, 46603);
     			attr_dev(td40, "class", "svelte-1vzb36m");
-    			add_location(td40, file$3, 1226, 4, 46608);
+    			add_location(td40, file$3, 1226, 4, 46599);
     			attr_dev(td41, "class", "svelte-1vzb36m");
-    			add_location(td41, file$3, 1227, 4, 46724);
+    			add_location(td41, file$3, 1227, 4, 46715);
     			attr_dev(td42, "class", "svelte-1vzb36m");
-    			add_location(td42, file$3, 1228, 4, 46743);
+    			add_location(td42, file$3, 1228, 4, 46734);
     			attr_dev(td43, "class", "svelte-1vzb36m");
-    			add_location(td43, file$3, 1229, 4, 46775);
+    			add_location(td43, file$3, 1229, 4, 46766);
     			attr_dev(td44, "class", "svelte-1vzb36m");
-    			add_location(td44, file$3, 1230, 4, 46789);
+    			add_location(td44, file$3, 1230, 4, 46780);
     			attr_dev(tr11, "class", "svelte-1vzb36m");
-    			add_location(tr11, file$3, 1225, 2, 46599);
+    			add_location(tr11, file$3, 1225, 2, 46590);
     			attr_dev(a14, "href", "https://www.medrxiv.org/content/10.1101/2020.03.03.20028423v1");
     			attr_dev(a14, "class", "svelte-1vzb36m");
-    			add_location(a14, file$3, 1233, 8, 46822);
+    			add_location(a14, file$3, 1233, 8, 46813);
     			attr_dev(td45, "class", "svelte-1vzb36m");
-    			add_location(td45, file$3, 1233, 4, 46818);
+    			add_location(td45, file$3, 1233, 4, 46809);
     			attr_dev(td46, "class", "svelte-1vzb36m");
-    			add_location(td46, file$3, 1234, 4, 46919);
+    			add_location(td46, file$3, 1234, 4, 46910);
     			attr_dev(td47, "class", "svelte-1vzb36m");
-    			add_location(td47, file$3, 1235, 4, 46941);
+    			add_location(td47, file$3, 1235, 4, 46932);
     			attr_dev(td48, "class", "svelte-1vzb36m");
-    			add_location(td48, file$3, 1236, 4, 46955);
+    			add_location(td48, file$3, 1236, 4, 46946);
     			attr_dev(td49, "class", "svelte-1vzb36m");
-    			add_location(td49, file$3, 1237, 4, 46984);
+    			add_location(td49, file$3, 1237, 4, 46975);
     			attr_dev(td50, "class", "svelte-1vzb36m");
-    			add_location(td50, file$3, 1238, 4, 47011);
+    			add_location(td50, file$3, 1238, 4, 47002);
     			attr_dev(tr12, "class", "svelte-1vzb36m");
-    			add_location(tr12, file$3, 1232, 2, 46809);
+    			add_location(tr12, file$3, 1232, 2, 46800);
     			attr_dev(a15, "href", "https://www.mdpi.com/2077-0383/9/2/462");
     			attr_dev(a15, "class", "svelte-1vzb36m");
-    			add_location(a15, file$3, 1242, 8, 47045);
+    			add_location(a15, file$3, 1242, 8, 47036);
     			attr_dev(td51, "class", "svelte-1vzb36m");
-    			add_location(td51, file$3, 1242, 4, 47041);
+    			add_location(td51, file$3, 1242, 4, 47032);
     			attr_dev(td52, "class", "svelte-1vzb36m");
-    			add_location(td52, file$3, 1243, 4, 47121);
+    			add_location(td52, file$3, 1243, 4, 47112);
     			attr_dev(td53, "class", "svelte-1vzb36m");
-    			add_location(td53, file$3, 1244, 4, 47140);
+    			add_location(td53, file$3, 1244, 4, 47131);
     			attr_dev(td54, "class", "svelte-1vzb36m");
-    			add_location(td54, file$3, 1245, 4, 47172);
+    			add_location(td54, file$3, 1245, 4, 47163);
     			attr_dev(td55, "class", "svelte-1vzb36m");
-    			add_location(td55, file$3, 1246, 4, 47186);
+    			add_location(td55, file$3, 1246, 4, 47177);
     			attr_dev(tr13, "class", "svelte-1vzb36m");
-    			add_location(tr13, file$3, 1241, 2, 47032);
+    			add_location(tr13, file$3, 1241, 2, 47023);
     			set_style(table2, "width", "100%");
     			set_style(table2, "margin", "auto");
     			set_style(table2, "font-weight", "300");
     			set_style(table2, "border-spacing", "inherit");
-    			add_location(table2, file$3, 1161, 0, 44194);
+    			add_location(table2, file$3, 1161, 0, 44185);
     			attr_dev(div122, "class", "center svelte-1vzb36m");
-    			add_location(div122, file$3, 1160, 0, 44173);
+    			add_location(div122, file$3, 1160, 0, 44164);
     			attr_dev(a16, "href", "https://academic.oup.com/jtm/advance-article/doi/10.1093/jtm/taaa021/5735319");
     			attr_dev(a16, "class", "svelte-1vzb36m");
-    			add_location(a16, file$3, 1254, 5, 47247);
+    			add_location(a16, file$3, 1254, 5, 47238);
     			attr_dev(a17, "href", "https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf");
     			attr_dev(a17, "class", "svelte-1vzb36m");
-    			add_location(a17, file$3, 1254, 256, 47498);
+    			add_location(a17, file$3, 1254, 256, 47489);
     			attr_dev(p4, "class", "center svelte-1vzb36m");
-    			add_location(p4, file$3, 1253, 0, 47223);
+    			add_location(p4, file$3, 1253, 0, 47214);
     			attr_dev(a18, "href", "https://twitter.com/gabeeegoooh");
     			attr_dev(a18, "class", "svelte-1vzb36m");
-    			add_location(a18, file$3, 1258, 22, 47678);
+    			add_location(a18, file$3, 1258, 22, 47669);
     			attr_dev(a19, "href", "mailto:izmegabe@gmail.com");
     			attr_dev(a19, "class", "svelte-1vzb36m");
-    			add_location(a19, file$3, 1258, 85, 47741);
+    			add_location(a19, file$3, 1258, 85, 47732);
     			attr_dev(a20, "href", "http://gabgoh.github.io/");
     			attr_dev(a20, "class", "svelte-1vzb36m");
-    			add_location(a20, file$3, 1258, 134, 47790);
+    			add_location(a20, file$3, 1258, 134, 47781);
     			attr_dev(p5, "class", "center svelte-1vzb36m");
-    			add_location(p5, file$3, 1257, 0, 47637);
-    			add_location(b6, file$3, 1268, 0, 48103);
-    			add_location(br16, file$3, 1268, 22, 48125);
+    			add_location(p5, file$3, 1257, 0, 47628);
+    			add_location(b6, file$3, 1268, 0, 48094);
+    			add_location(br16, file$3, 1268, 22, 48116);
     			html_tag_6 = new HtmlTag(raw8_value, t446);
-    			add_location(i14, file$3, 1269, 172, 48302);
-    			add_location(i15, file$3, 1269, 245, 48375);
-    			add_location(i16, file$3, 1269, 316, 48446);
+    			add_location(i14, file$3, 1269, 172, 48293);
+    			add_location(i15, file$3, 1269, 245, 48366);
+    			add_location(i16, file$3, 1269, 316, 48437);
     			attr_dev(p6, "class", "center svelte-1vzb36m");
-    			add_location(p6, file$3, 1267, 0, 48082);
-    			add_location(b7, file$3, 1273, 0, 48907);
-    			add_location(br17, file$3, 1273, 25, 48932);
+    			add_location(p6, file$3, 1267, 0, 48073);
+    			add_location(b7, file$3, 1273, 0, 48898);
+    			add_location(br17, file$3, 1273, 25, 48923);
     			attr_dev(a21, "href", "https://enkimute.github.io/");
     			attr_dev(a21, "class", "svelte-1vzb36m");
-    			add_location(a21, file$3, 1274, 0, 48937);
+    			add_location(a21, file$3, 1274, 0, 48928);
     			attr_dev(a22, "href", "https://twitter.com/ch402");
     			attr_dev(a22, "class", "svelte-1vzb36m");
-    			add_location(a22, file$3, 1274, 82, 49019);
+    			add_location(a22, file$3, 1274, 82, 49010);
     			attr_dev(a23, "href", "https://twitter.com/shancarter");
     			attr_dev(a23, "class", "svelte-1vzb36m");
-    			add_location(a23, file$3, 1274, 134, 49071);
+    			add_location(a23, file$3, 1274, 134, 49062);
     			attr_dev(a24, "href", "https://twitter.com/ludwigschubert");
     			attr_dev(a24, "class", "svelte-1vzb36m");
-    			add_location(a24, file$3, 1275, 9, 49133);
+    			add_location(a24, file$3, 1275, 9, 49124);
     			attr_dev(a25, "href", "https://twitter.com/NikitaJer");
     			attr_dev(a25, "class", "svelte-1vzb36m");
-    			add_location(a25, file$3, 1276, 25, 49219);
+    			add_location(a25, file$3, 1276, 25, 49210);
     			attr_dev(p7, "class", "center svelte-1vzb36m");
-    			add_location(p7, file$3, 1272, 0, 48886);
+    			add_location(p7, file$3, 1272, 0, 48877);
     			attr_dev(div123, "class", "legendtext svelte-1vzb36m");
-    			add_location(div123, file$3, 1283, 4, 49492);
+    			add_location(div123, file$3, 1283, 4, 49483);
     			attr_dev(textarea, "type", "textarea");
     			attr_dev(textarea, "rows", "1");
     			attr_dev(textarea, "cols", "5000");
@@ -24939,15 +24939,15 @@
     			attr_dev(textarea, "id", "fname");
     			attr_dev(textarea, "name", "fname");
     			textarea.value = ctx.state;
-    			add_location(textarea, file$3, 1285, 6, 49558);
-    			add_location(form, file$3, 1284, 4, 49545);
+    			add_location(textarea, file$3, 1285, 6, 49549);
+    			add_location(form, file$3, 1284, 4, 49536);
     			attr_dev(div124, "class", "center svelte-1vzb36m");
     			set_style(div124, "padding", "10px");
     			set_style(div124, "margin-top", "3px");
     			set_style(div124, "width", "925px");
-    			add_location(div124, file$3, 1282, 2, 49414);
+    			add_location(div124, file$3, 1282, 2, 49405);
     			set_style(div125, "margin-bottom", "30px");
-    			add_location(div125, file$3, 1280, 0, 49377);
+    			add_location(div125, file$3, 1280, 0, 49368);
 
     			dispose = [
     				listen_dev(div64, "mousedown", ctx.lock_yaxis),
@@ -26050,7 +26050,7 @@
     				set_data_dev(t262, t262_value);
     			}
 
-    			if (changed.formatNumber || changed.Math || changed.N || changed.get_d || changed.Iters || changed.indexToTime) {
+    			if (changed.Math || changed.N || changed.get_d || changed.Iters || changed.indexToTime) {
     				each_value_1 = ctx.Iters;
 
     				let i;
