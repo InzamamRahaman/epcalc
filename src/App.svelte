@@ -1019,10 +1019,6 @@ Note that one can use this calculator to measure one's risk exposure to the dise
 </p>
 
 
-<p class = "center">
-A sampling of the estimates for epidemic parameters are presented below:
-</p>
-
 
 
 <div class="center">
@@ -1064,6 +1060,11 @@ A sampling of the estimates for epidemic parameters are presented below:
 {/each}
 </table>
 </div>
+
+<p class = "center">
+A sampling of the estimates for epidemic parameters are presented below:
+</p>
+
 
 <div class="center">
 <table style="width:100%; margin:auto; font-weight: 300; border-spacing: inherit">
